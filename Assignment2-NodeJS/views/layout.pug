@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title WeatherQuoter
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css', integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z', crossorigin='anonymous')
+    link(rel="stylesheet", href="css/styles.css")
+  body
+    header#header
+      nav
+        h2#site-name WeatherQuoter
+        ul
+          li
+            a(href="/") Home
+          li
+            a(href="/about") About
+          li
+            a(href="/contactus") Contact Us
+    main#main
+      block main-content
+    footer#footer
+      p &copy; 2024 WeatherQuoter by Saloni Pawar
+  script(src="script/scripts.js")

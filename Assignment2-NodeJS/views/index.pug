@@ -1,0 +1,19 @@
+extends layout
+
+block main-content
+  body.background-image
+    .container
+      .row.justify-content-center.align-items-center
+        .col-md-6
+          .card.mb-4.shadow-sm
+            .card-body
+              h5.card-title.mb-3.text-center Select the country whose weather you would like to check out today
+              form(id='weatherForm', action='/weather', method='GET')
+                div.form-group
+                  select#countrySelect(name='country', class='form-control custom-select')
+                    option(value='', selected='selected') Select Country
+                    each country in countries
+                      option(value=country.name)= country.name
+                button.btn.btn-primary.btn-block(type='submit') Search
+  .text-center.mb-4
+    p.mb-0 Enjoy exploring the weather of different countries and get inspired by beautiful quotes. Let's make every day a delightful adventure!

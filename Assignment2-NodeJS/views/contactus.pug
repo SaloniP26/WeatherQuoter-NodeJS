@@ -1,0 +1,16 @@
+extends layout
+
+block main-content
+  .container.mt-5
+    h1.mb-4 Contact Us
+    form
+      .form-group
+        label(for='name') Your Name
+        input.form-control(type='text', id='name', placeholder='Enter your name')
+      .form-group
+        label(for='email') Your Email
+        input.form-control(type='email', id='email', placeholder='Enter your email')
+      .form-group
+        label(for='message') Message
+        textarea.form-control(id='message', rows='5', placeholder='Enter your message')
+      button.btn.btn-primary(type='submit') Submit

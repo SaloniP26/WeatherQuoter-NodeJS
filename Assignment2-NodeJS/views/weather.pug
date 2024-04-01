@@ -1,0 +1,33 @@
+extends layout
+
+block main-content
+  div.container
+    h1.weather-title.mb-4.text-center WeatherQuoter
+    div.weather-info
+      div.card.mb-4.shadow-sm
+        div.card-header.bg-primary.text-white.text-center
+          h2.section-title.mb-3 Weather Information
+        div.card-body
+          p.country-name.mb-2
+            strong Country: #{country}
+          p.temperature.mb-2
+            strong Temperature: #{temperature}°C
+          p.feels-like.mb-2
+            strong Feels Like: #{feels_like}°C
+          p.description.mb-2
+            strong Description: #{description}
+          p.humidity.mb-2
+            strong Humidity: #{humidity}%
+          p.icon.mb-2 
+          img(src=`https://openweathermap.org/img/wn/${icon}.png`, alt="Weather Icon")
+    div.quote-info
+      div.card.mb-4.shadow-sm
+        div.card-header.bg-success.text-white.text-center
+          h2.section-title.mb-3 Inspirational Quote
+        div.card-body
+          p.quote.mb-2
+            strong Quote: #{quote}
+          p.author.mb-2
+            strong Author: #{author}
+    div.text-center
+      button.btn.btn-primary.refresh-button(type='button', onclick='window.location.reload()') Refresh
