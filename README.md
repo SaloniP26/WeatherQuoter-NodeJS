@@ -25,10 +25,10 @@ WeatherQuoter is a Node.js application built with Express and Pug that allows us
 To run the WeatherQuoter application locally:
 
 1. Clone the repository: `git clone <repository-url>`
-2. Install dependencies: `npm install`
-3. Set up environment variables for API keys (if required).
-4. Start the server: `npm start`
-5. Access the application in your browser at `http://localhost:3000`
+2. npm init
+3. npm i express
+4. Set up environment variables for API keys (not reguired for this project).
+5. Access the application in your browser
 
 ## Contributors
 
